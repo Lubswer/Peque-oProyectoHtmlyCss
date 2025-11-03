@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fffdf8;
+  color: #333;
+}
+h1 {
+  color: white;
+  text-shadow: 
+    -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f4b7b7;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Sección Inicio */
+.inicio {
+  color: aliceblue;
+  background-color: #000000;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.inicio img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #cf7e7e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+.info {
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #de8e8e;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+
+}
+.conoce {
+  color: white;
+  text-shadow: 
+    -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+.tiktok-embed{
+    border-radius: 45px;   
+}
+.conoce{
+    padding: 36px 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.menu {
+  color: white;
+  text-shadow: 
+    -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+
+.menu {
+    color: #e9e9e9;
+    font-size: 45px;
+    background-color: #ed9797;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 30px;
+    text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.menu-list {
+  border-radius: 69px;
+  background-color: #0000002b;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr); /* 3 columnas iguales */
+  gap: 30px; /* separación entre imágenes */
+  padding: 20px;
+  width: 56%;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ margin: 0 auto;
+
+}
+img {
+  transition: transform 0.4s ease; 
+
+}
+
+img:hover {
+  transform: scale(1.1); /* Aumenta tamaño 10% */
+}
+.menu-list img {
+  width: 400px;
+  height: 200px;
+  max-width: 250px; /* tamaño máximo */
+  border-radius: 40px;
+}
+.ubicacion{
+    color: #fb7acc;
+    display: flex;
+    background-color: #ed9f9f7f;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 40PX;
+}
+.redes img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 70px;
+    
+}
+h4{
+    text-align: center;
+    font-size: 35px;
+}
+h4 {
+  text-shadow: 
+    -2px -2px 0 rgb(248, 248, 248),  
+     2px -2px 0 rgb(255, 251, 251),
+    -2px  2px 0 rgb(255, 252, 252),
+     2px  2px 0 rgb(255, 255, 255);
+}  
+.map{
+    width: 400px;
+    height: 400px;
+    border-radius: 45px;
+
+}
+
+/* ----------------------------- */
+/*        RESPONSIVE CSS         */
+/* ----------------------------- */
+
+
+
+/* Móviles */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px;
+    display: flex;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+ .navbar ul {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.navbar li {
+  margin: 5px 10px;
+}
+
+
+  .inicio {
+    padding: 40px 10px;
+  }
+
+  .inicio img {
+    width: 100%;
+  }
+
+  .menu {
+    font-size: 30px;
+    padding: 20px 10px;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  flex-wrap: wrap; 
+  padding: 15px;
+}
+  .redes img {
+  width: 60px;
+  height: 60px;
+  margin: 0; 
+  }
+
+
+  .map {
+    width: 100%;
+    height: 250px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  .info {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
